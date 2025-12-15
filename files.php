@@ -53,4 +53,14 @@ echo'
 
 
 
+<?php
+// Start the session
+session_start();
+
+// Create a session variable
+$_SESSION['userRole'] = "admin";
+
+echo "Session variable 'userRole' is set. <br>";
+echo "<a href='read_session.php'>Go to next page</a>";
+?>
 
